@@ -126,6 +126,12 @@ import  RohatSirop from "../../assets/images/rohat_siropi1.svg"
 
             state.madal.push(modalFilter)
         },
+        madalAdd(state, action) {
+            state.madal.filter((el) => el.id === action.payload ? el.count ++ : '')
+        },
+        madalDel(state, action) {
+            state.madal.filter((el) => el.id === action.payload ? el.count -- : '')
+        },
         cardFilter(state, action) {
 
             const Filterad = state.card.filter((fil) => fil.id !== 3)
@@ -153,5 +159,5 @@ import  RohatSirop from "../../assets/images/rohat_siropi1.svg"
 });
 
 
-export const { cardAdd, cardDel, cardFilter,homemodal, cardChoy, cardYog, cardLike,tavarsLike, cardDelete,AddShopingTavar, shoppingAdd,productDeleteLike,productDeleteShopping, cardAsal } = cardSlise.actions;
+export const { cardAdd, cardDel, cardFilter,homemodal, cardChoy, cardYog,madalAdd,madalDel, cardLike,tavarsLike, cardDelete,AddShopingTavar, shoppingAdd,productDeleteLike,productDeleteShopping, cardAsal } = cardSlise.actions;
 export default cardSlise.reducer;

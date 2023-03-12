@@ -1,5 +1,7 @@
 .ShoppingNotFound{
+    padding-top: 200px;
+    padding-bottom: 250px;
     background-image: url("../../assets//images//shopping2.png");
-    background-position: right center;
+    background-position: right top;
     background-repeat: no-repeat;
 }

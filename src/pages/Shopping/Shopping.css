@@ -1,7 +1,9 @@
 .shopping {
     margin-bottom: 200px;
 }
-
+.Shop_content{
+    padding-bottom: 200px;
+}
 .shoping_title {
     font-weight: 600;
     font-size: 24px;

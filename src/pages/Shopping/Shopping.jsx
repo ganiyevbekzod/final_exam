@@ -10,6 +10,7 @@ import MinusBtn from "../../assets/images/minus.svg"
 import PlusBtn from "../../assets/images/plus.svg"
 import { Home } from '../../components/Home/Home'
 import { ShoppingNotFound } from '../../components/ShoppingNotFound/ShoppingNotFound'
+import { Footer } from '../../components/Footer'
 export const Shopping = () => {
 
     const navigaet = useNavigate()
@@ -17,7 +18,7 @@ export const Shopping = () => {
     const { shopping } = useSelector((state) => state.card)
     const { count } = useSelector((state) => state.card)
     const Sum = shopping.map((item) => item[0].price * item[0].count)
-    var counts = Sum.reduce((acc, cur) => acc + cur)
+    var counts = Sum.reduce((acc, cur) =>acc+cur,15000)
     const Summ=counts+15000
     if (shopping.length) {
         const DelProduct = (Id) => {
@@ -65,12 +66,11 @@ export const Shopping = () => {
                                     )
                                 }
                             </ul>
-
-                            <div className="price_content shadow">
+                            <div className="price_content shadow mb-6 pb-6">
                                 <div className="  d-flex align-items-center justify-content-between">
                                     <h3 className='price_text'>Mahsulotlar ( {shopping.length} ) </h3>
                                     <p className='cards_text'>
-                                        {counts}uzs</p>
+                                        {Sum}uzs</p>
                                 </div>
                                 <div className="d-flex align-items-center justify-content-between">
                                     <h3 className='cards_text'>Chegirma</h3>
@@ -85,12 +85,13 @@ export const Shopping = () => {
                                     <p className='cards_title'>{Summ} uzs</p>
                                 </div>
 
-                                <button onClick={() => navigaet('/log')} className='card_button'>To’lovga o’tish</button>
+                                <button onClick={() => navigaet('/')} className='card_button'>To’lovga o’tish</button>
                                 <button onClick={() => navigaet('/')} className='card_buttons'>Menyuga qaytish</button>
                             </div>
                         </div>
                     </div>
                 </div>
+                <Footer/>
             </div>
         )
     }
@@ -99,6 +100,7 @@ export const Shopping = () => {
             <div>
                 <Home />
                 <ShoppingNotFound />
+                <Footer/>
             </div>
         )
     }
