@@ -58,6 +58,7 @@ export const Login=()=>{
                 <button className="login_btn d-block mx-auto mt-5 border-0" type="submit">
                 Tizimga kirish
                 </button>
+                
             </form>
             </div>
             <div>
