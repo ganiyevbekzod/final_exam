@@ -1,0 +1,81 @@
+.site_footer {
+    padding: 39px 0px 0px 0px;
+    background: #282828;
+}
+
+.footer_title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+}
+
+.footer_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.footer_link {
+    width: 400px;
+}
+
+.contact_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 62px;
+    width: 550px;
+    background: #53B175;
+    padding: 21px 84px 17px 37px ;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.footer_strong {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+
+    font-feature-settings: 'salt' on, 'liga' off;
+
+    /* Text / Gray 100 */
+
+    color: #F4F5F7;
+}
+.contact_text{
+    font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+
+/* Backgrounds/Light/Primary */
+
+color: #FFFFFF;
+
+opacity: 0.6;
+}
+.contact_link{
+    text-decoration: none;
+    font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+
+
+/* Backgrounds/Light/Primary */
+
+color: #FFFFFF;
+}
+.small_text{
+    font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+
+/* Labels/Light/Primary */
+
+color: #000000;
+}

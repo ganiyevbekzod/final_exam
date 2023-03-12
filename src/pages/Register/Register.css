@@ -1,0 +1,49 @@
+.register_span {
+    padding-left: 10px;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 29px;
+    color: #C3C3C3;
+}
+
+.register_title {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* Backgrounds/Action/Second */
+
+    color: #53B175;
+
+}
+
+.register_span_title {
+    line-height: 22px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+}
+
+.register_btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 113px;
+    background: #53B175;
+    border-radius: 50px;
+    color: #FFF9FF;
+}
+.register_text{
+    font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #7C7C7C;
+}

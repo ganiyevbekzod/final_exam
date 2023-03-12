@@ -1,0 +1,269 @@
+.bosh_sahifa {
+    background-image: url("../../assets//images/bg_img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 690px;
+}
+
+.about {
+    position: relative;
+}
+
+.Consultant_img {
+    position: absolute;
+    left: 0px;
+    top: 318px;
+}
+
+.servic_img {
+    position: absolute;
+    right: 35px;
+    bottom: 42px;
+}
+
+.sahifa_title {
+    margin: 0px;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 66px;
+    color: #000000;
+    text-align: center;
+    z-index: 10;
+
+
+}
+
+.sahifa_subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    /* Labels/Light/Primary */
+
+    color: #000000;
+}
+
+.subtitle_color {
+    color: #53B175;
+}
+
+.doctor_img {
+    display: block;
+    margin: 0 auto;
+    width: 836px;
+    padding-top: 140px;
+}
+
+.delivery_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0px;
+    padding: 40px 0px 50px 0px;
+}
+
+.delivery_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delivery_title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1D1D1F;
+}
+
+.delivery_text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #1D1D1F;
+
+    opacity: 0.75;
+}
+.list_items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.card_like {
+    width: 25px;
+    height: 22px;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #181725;
+}
+
+.card-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #7C7C7C;
+}
+
+.discount {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #808080;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #53B175;
+}
+.button_link{
+    margin-top: 50px;
+    background: rgba(83, 177, 117, 0.1);
+    border-radius: 30px;
+    padding: 13px 26px;
+    gap: 20px;
+}
+.btnsingle{
+    border: none;
+    margin: 0 auto;
+    background: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    
+    /* Gray 4 */
+    
+    color: #BDBDBD;
+}
+.home_img{
+    width:100%
+}
+.quiz_title{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    color: #282938;
+}
+.quiz_subtitle{
+    margin: 0;
+    font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+/* Backgrounds/Action/Second */
+color: #53B175;
+opacity: 0.87;
+}
+
+.accordion{
+width: 700px;
+}
+.accordion_span{
+    font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height, or 150% */
+
+text-align: center;
+
+/* Backgrounds/Action/Second */
+
+color: #53B175;
+
+}
+.accordion_title{
+    margin: 0;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    
+    /* Dark blue */
+    
+    color: #282938;
+     
+}
+.userForm{
+    padding-top: 70px;
+    background-image: url("../../assets//images/Backgroundform.png");
+    background-position: 0px 0px;
+}
+.form_title{
+    margin-top: 10px;
+    font-weight: 600;
+font-size: 30px;
+line-height: 125%;
+/* or 37px */
+
+
+/* Labels/Light/Primary */
+
+color: #000000;
+}
+.form_img{
+    width: 25px;
+    height: 18px;
+    border-radius: 3px;
+}
+.form-control{
+    background: none;
+}
+.form_span{
+    font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #53B175;
+}
+.formbutton{
+    padding: 10px 10px 10px 22px;
+    background: rgba(83, 177, 117, 0.2);
+border-radius: 50px;
+}
+.counst{
+    padding: 8px 18px;
+    border: 1px solid #E2E2E2;
+border-radius: 17px;
+}
+.modal-content{
+    left: -200px;
+    width: 900px;
+}
+.modal_title{
+    margin: 0;
+    font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+/* identical to box height */
+text-align: right;
+letter-spacing: 0.1px;
+
+/* Backgrounds/Action/Second */
+
+color: #53B175;
+}
+.count_content{
+    margin-right: 320px;
+}
+.buttonsave{
+border-radius: 100px;
+padding: 13px 30px;
+    color: #FFF9FF;
+}

@@ -1,0 +1,38 @@
+.login_span {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 29px;
+    color: #C3C3C3;
+}
+
+.login_title {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* Backgrounds/Action/Second */
+
+    color: #53B175;
+
+}
+
+.login_span_title {
+    line-height: 22px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+}
+
+.login_btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 127px;
+    background: #53B175;
+    border-radius: 50px;
+    color: #FFF9FF;
+}
