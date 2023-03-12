@@ -6,12 +6,12 @@ export const ShoopingPrice=()=>{
     const { count } = useSelector((state) => state.card)
     const Sum = shopping.map((item) => item.prise * item.count)
     var Summ = Sum.reduce((acc, cur) => acc + cur)
-    const bcecounts = Summ + 1500
+    const SummCount = Summ + 1500
     return(
         <>
         <ul>
         {
-            shopping[0].map((item)=>
+            shopping.map((item)=>
                     <div className="price_content shadow">
               <div className="  d-flex align-items-center justify-content-between">
                 <h3 className='price_text'>Mahsulotlar ( {shopping.length} ) </h3>
@@ -28,7 +28,7 @@ export const ShoopingPrice=()=>{
               </div>
               <div className="d-flex align-items-center justify-content-between">
                 <h3 className='cards_title'>Umumiy</h3>
-                <p className='cards_title'>{item.price*item.count+1500} uzs</p>
+                <p className='cards_title'>{item.price*item.count+item.chegirma} uzs</p>
               </div>
 
               <button onClick={() => navigaet('/log')} className='card_button'>To’lovga o’tish</button>

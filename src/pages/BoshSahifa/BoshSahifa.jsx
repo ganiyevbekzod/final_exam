@@ -105,15 +105,15 @@ export const BoshSahifa = () => {
                                                 Tafsilotlar <img src={Arrow} />
                                             </button>
                                             {
-                                                card.map((item)=>
+                                                madal.length ?
+                                                madal.map((item)=>
                                                 <div class="modal fade modale" id="exampleModal" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog">
                                                     <div class="modal-content">
                                                         <div class="modal-header ">
                                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                         </div>
-                                                        <div class="modal-body">
-                                                            
+                                                        <div class="modal-body">              
                                                             <div className="d-flex">
                                                                 <img src={item.image} />
                                                                 <div className="mt-3">
@@ -121,9 +121,9 @@ export const BoshSahifa = () => {
                                                                     <img src={stark} alt="image" />
                                                                     <div className="d-flex mt-3 align-items-center">
                                                                         <div className="count_content d-flex">
-                                                                            <button onClick={() => dispetch(cardDel(item.id))} className='Btn_increment align-items-center me-4'><img src={MinusBtn} alt="minus" /></button>
-                                                                            <h3 className='counst m-0 '>{item?.count}</h3>
-                                                                            <button onClick={() => dispetch(cardAdd(item.id))} className='Btn_decrement align-items-center ms-4'><img src={PlusBtn} alt="plus" /></button>
+                                                                            <button onClick={() => dispetch(cardDel(item[0].id))} className='Btn_increment align-items-center me-4'><img src={MinusBtn} alt="minus" /></button>
+                                                                            <h3 className='counst m-0 '>{item.count}</h3>
+                                                                            <button onClick={() => dispetch(cardAdd(item[0].id))} className='Btn_decrement align-items-center ms-4'><img src={PlusBtn} alt="plus" /></button>
                                                                         </div>
                                                                         <h3 className="text-success modal_title ">{item.price} uzs</h3>
                                                                     </div>
@@ -158,34 +158,8 @@ export const BoshSahifa = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>)
+                                            </div>):""
                                             }
-                 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                         </div>
                                     </div>
                                 ))

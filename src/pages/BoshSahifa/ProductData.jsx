@@ -8,7 +8,7 @@ import  RohatSirop from "../../assets/images/rohat_siropi1.svg"
     name: 'card',
     initialState:
     {
-        count: 1,
+        count: 2,
         shopping: [],
         madal:[],
         cardAd: [],
@@ -22,6 +22,7 @@ import  RohatSirop from "../../assets/images/rohat_siropi1.svg"
                 true: 'Mavjud',
                 sale:"17,190, uzs",
                 price:16000,
+                chegirma:1500,
                 count: 1
 
             },
@@ -33,6 +34,7 @@ import  RohatSirop from "../../assets/images/rohat_siropi1.svg"
                 true: 'Erkaklar kuchi',
                 sale: '200,190, uzs',
                 price: 150000,
+                chegirma:1500,
                 count: 1
 
             },
@@ -44,6 +46,7 @@ import  RohatSirop from "../../assets/images/rohat_siropi1.svg"
                 true: '7pcs, Price',
                 sale: '17,190, uzs',
                 price: 16000,
+                chegirma:1500,
                 count: 1
 
             },
@@ -55,6 +58,7 @@ import  RohatSirop from "../../assets/images/rohat_siropi1.svg"
                 true: 'Mavjud',
                 sale: '17,190, uzs',
                 price: 16000,
+                chegirma:1500,
                 count: 1
 
             },
@@ -66,6 +70,7 @@ import  RohatSirop from "../../assets/images/rohat_siropi1.svg"
                 true: 'Erkaklar kuchi',
                 sale: '200,190, uzs',
                 price: 150000,
+                chegirma:1500,
                 count: 1
 
             },
@@ -117,7 +122,7 @@ import  RohatSirop from "../../assets/images/rohat_siropi1.svg"
 
         },
         homemodal(state,action){
-            const modalFilter = state.card.filter((el) => el.id === action.payload)
+            const modalFilter = state.card.filter((item) =>item.id === action.payload)
 
             state.madal.push(modalFilter)
         },
@@ -139,13 +144,10 @@ import  RohatSirop from "../../assets/images/rohat_siropi1.svg"
             state.tavars.push(asal)
         },
         cardYog(state, action) {
-
             const FilteradYog = state.card.filter((fil) => fil.title === 'ROHAT Yog`i №2')
             const Choy = FilteradYog.flat()
             state.tavars.push(Choy)
         },
-
-
     },
 
 });
